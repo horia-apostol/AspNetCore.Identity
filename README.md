@@ -70,4 +70,4 @@ To enable email sender and external login providers, you will need to configure 
    }
    ```
 
-For more details on how to configure these providers, refer to the [Official Documentation](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-8.0&tabs=visual-studio).
+For more details on how to configure these providers, refer to [this article](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-8.0&tabs=visual-studio).
