@@ -27,6 +27,7 @@ namespace AspNet8Identity.Data
             {
                 var user = new ApplicationUser
                 {
+                    UserName = AdminCredentials.UserName,
                     Email = AdminCredentials.Email,
                     EmailConfirmed = true
                 };
@@ -35,6 +36,7 @@ namespace AspNet8Identity.Data
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, Roles.Admin);
+                    await _userManager.AddToRoleAsync(user, Roles.User);
                 }
             }
         }

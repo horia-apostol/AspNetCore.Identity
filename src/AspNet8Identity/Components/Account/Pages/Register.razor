@@ -3,6 +3,7 @@
 @using System.ComponentModel.DataAnnotations
 @using System.Text
 @using System.Text.Encodings.Web
+@using AspNet8Identity.Misc
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.AspNetCore.WebUtilities
 @using AspNet8Identity.Data
@@ -80,6 +81,7 @@
             return;
         }
 
+        await UserManager.AddToRoleAsync(user, Roles.User);
         Log.Information("User created a new account with password.");
 
         var userId = await UserManager.GetUserIdAsync(user);

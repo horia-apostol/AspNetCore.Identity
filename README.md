@@ -1,6 +1,6 @@
-# ASP.NET 8 Identity
+# ASP.NET Core 8 Identity
 
-This project is an ASP.NET Core 8 application that provides identity and authentication features. It includes an implementation for the `IEmailSender` interface using `SendGrid`, external login providers templates, QR code generation for 2FA and structured logging with `Serilog`. The application is designed to be easy to configure and run, with an `SQLite` database, so no additional database setup is required.
+This project is an ASP.NET Core 8 application that provides identity and authentication features. It includes an implementation for the `IEmailSender` interface using `SendGrid`, external login providers templates, custom properties for `ApplicationUser`, QR code generation for 2FA and structured logging with `Serilog`. The application is designed to be easy to configure and run, with an `SQLite` database, so no additional database setup is required.
 
 ## Features
 
@@ -8,6 +8,7 @@ This project is an ASP.NET Core 8 application that provides identity and authent
 
    - Integrated `SendGrid` to send confirmation emails and password reset emails.
    - Configured external login options with `Microsoft`, `Google`, `Facebook`, and `Twitter`.
+   - Custom profile data handling for `ApplicationUser`.
    - Automatically assigns roles and seeds the database with default values, including an admin user.
    - Generates QR codes for two-factor authentication (2FA) using the `QRCoder` library.
    - Implemented `Serilog` for logging.
