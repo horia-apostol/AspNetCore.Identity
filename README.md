@@ -23,8 +23,6 @@ This project is an ASP.NET Core 8 application that provides identity and authent
 ### QR Code for 2FA
 ![QR Code for 2FA](docs/VisualQrCode.png)
 
-### [Serilog Logging Example](docs/SerilogLogging.png)
-
 ## Getting Started
 
 ### Minimal Prerequisites
